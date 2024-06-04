@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; 
+}
+
+.sidebar {
+    background-color: #40b868;
+    width: 260px;
+    padding: 24px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.sidebar .header {
+    position: relative;
+}
+
+.main {
+    background-color: #eeee;
+    flex-grow: 1;
+}
+
+.sidebar .deskripsi-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .header .list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .list-item .ikon {
+    margin-right: 12px;
+}
+
+.sidebar .main .list-item .deskripsi {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar .header .toggle {
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    height: 25px;
+    width: 25px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: aqua;
+    font-size: 22px;
+}
+
+.sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li .ikon {
+    font-size: 20px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar li .ikon,
+.sidebar li text {
+    color: #000;
+}
+
+.sidebar .search-box {
+    background: #E8F5E8;
+}
+
+.search-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: #E8F5E8;
+}
+
+.sidebar li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+.sidebar li a:hover {
+    background: goldenrod;
+}
+
+.sidebar li:hover .ikon,
+.sidebar li:hover text {
+    color: #fff;
+
+}
+
+.klik {
+    display: inline-block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    padding: 0.8rem 1rem;
+    display: flex;
+    background-color: lightgreen;
+    margin-bottom: 1rem;
+    border-radius: .8rem;
+}
+
+/* Map Section */
+
+.map {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
